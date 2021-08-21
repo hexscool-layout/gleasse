@@ -1,10 +1,28 @@
----
-title: 常見問題
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>常見問題</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <div class="header d-flex text-white bg-primary justify-around align-center">
+      <a href="index.html"><h1 class="brand text-hide">Glasses</h1></a>
+      <ul class="menu">
+        <li><a href="index.html">系列鏡框</a></li>
+        <li><a href="#">門市據點</a></li>
+        <li><a href="blog.html">部落格</a></li>
+        <li><a href="question.html">常見問題</a></li>
+      </ul>
+  </div>
+
+  
 <div class="question">
     <div class="container">
         <h2 class="question-title">
@@ -77,3 +95,39 @@ current: index
         </ul>
     </div>
 </div>
+
+
+  <div class="footer bg-primary text-white">
+    <div class="container">
+      <div class="footer-contact mb-24">
+        <div class="footer-contact-menu mb-36">
+          <ul class="footer-contact-links">
+            <li><a href="#">首頁</a></li>
+            <li><a href="#">系列鏡框</a></li>
+            <li><a href="#">門市據點</a></li>
+            <li><a href="#">部落格</a></li>
+            <li><a href="question">常見問題</a></li>
+          </ul>
+          <ul class="footer-contact-icons">
+            <li><a href="#"><img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-fb.svg" alt=""></a></li>
+            <li><a href="#"><img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-ig.svg" alt=""></a></li>
+            <li><a href="#"><img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-line.svg" alt=""></a></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="footer-contact-info">
+            <li ><img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-phone.svg" alt="" class="mr-22 mb-16">0800-000-000</li>
+            <li><img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-mail.svg" alt="" class="mr-20" width="40" height="32">glasses@business.com</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="mb-32">
+      <h5 class="copyright">Copyright © 2020 Glasses.All rights reserved.</h5>
+    </div>
+  </div>
+
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
