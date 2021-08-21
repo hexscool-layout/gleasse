@@ -1,0 +1,11 @@
+@mixin media-sm {
+    @media (max-width:$media-sm) {
+        @content
+    }
+};
+
+@mixin media-md {
+    @media (max-width:$media-md) {
+        @content
+    }
+}

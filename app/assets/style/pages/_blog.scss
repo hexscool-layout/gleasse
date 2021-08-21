@@ -1,0 +1,41 @@
+.blog {
+    font-family: $noto;
+    &-header {
+        background-color: $brown;
+        padding: 12px;
+        &-group {
+            display: flex;
+        }
+        &-item {
+            margin-left: 48px;
+            font-size: 20px;
+            line-height: 24px;
+            color:$white;
+            text-decoration: none;
+        }
+    }
+    &-title {
+        padding: 0 16px;
+        border-left: 8px solid #9F1213;
+        font-size: 48px;
+        line-height: 80px;
+        font-weight: bold;
+        margin-bottom: 60px;
+        @include media-md {
+            margin-bottom: 40px;
+        }
+        @include media-sm {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+    }
+    &-container {
+        padding:40px 20px 96px;
+        @include media-md {
+            padding:32px 20px 64px;
+        }
+        @include media-sm {
+            padding:28px 15px 40px;
+        }
+    }
+}

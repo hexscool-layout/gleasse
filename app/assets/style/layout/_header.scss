@@ -1,0 +1,44 @@
+.header {
+    padding:20px;
+    .brand {
+        background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/logo.png");
+        width: 80px;
+        height: 48px;
+    }
+
+    .menu {
+        display: flex;
+        li {
+            margin-right: 64px;
+            a {
+                color: $white;
+                text-decoration: none;
+                font-size: 20px;
+                line-height: 30px;
+                &:hover {
+                    color: $black;
+                }
+            }
+        }
+    }
+
+    @include media-sm {
+        flex-wrap: wrap;
+        padding: 10px 0 0 0; 
+
+        .brand {
+            margin-bottom: 10px;
+        }
+        .menu {
+            width: 100%;
+            flex-wrap: wrap;
+            li {
+                width:50%;
+                border:1px solid $white;
+                margin-right:0;
+                text-align: center;
+                padding:8px;
+            }
+        }
+    }
+}
